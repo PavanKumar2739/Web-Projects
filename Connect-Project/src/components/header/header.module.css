@@ -1,0 +1,135 @@
+.buttonLogout {
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .buttonLogout::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+   
+   
+    opacity: 0;
+    transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .buttonLogout:hover {
+    width: 100%; /* Adjust based on your button size */
+    height: 100%; /* Adjust based on your button size */
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+  }
+  .greeting {
+    font-size: 16px;
+    margin-right: 20px;
+    color: #fff; /* Example color */
+  }
+  /* header.module.css */
+
+.header {
+  padding: 15px 0;
+  background-color: RGBA(var(--bs-dark-rgb),var(--bs-bg-opacity,1))!important; /* Example background color */
+  color: #fff; /* Example text color */
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo svg {
+  width: 40px;
+  height: 32px;
+}
+
+
+
+.searchForm {
+  flex: 1;
+  margin-left: 30%;
+}
+
+/* header.module.css */
+
+.searchInput {
+  width: calc(80% - 10px); /* Adjust the width minus the icon size */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* Plain white background */
+  color: #333; /* Text color */
+  position: relative; /* Position relative for icon positioning */
+}
+.searchInput {
+ width: auto;
+  min-width: 20%; /* Set a minimum width to prevent the input from becoming too small */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* Plain white background */
+  color: #333; /* Text color */
+  position: absolute; /* Position relative for icon positioning */
+  top: 2%; /* Vertically center the icon */
+  right: 11%; /* Adjust the right spacing */
+}
+
+.searchIcon {
+  width: 5%;
+  height: 5%;
+  position: absolute; /* Position the search icon */
+  top: 5%; /* Vertically center the icon */
+  right: 7%; /* Adjust the right spacing */
+  transform: translateY(-50%); /* Adjust vertical alignment */
+  cursor: pointer;
+}
+
+.greeting {
+  margin-right: 20px;
+  display: flex;
+
+}
+
+
+.loginButtons,
+.logoutButton {
+  position: absolute; /* Position the search icon */
+  display: flex;
+  top: 2%; /* Vertically center the icon */
+  right: 3%; /* Adjust the right spacing */
+  align-items: center;
+  margin-left: 15px;
+  
+}
+
+.loginButtons button,
+.logoutButton button {
+  margin-left: 100px;
+}
+
+.logoutButton .buttonLogout {
+  cursor: pointer;
+  margin-left: 100px;
+}

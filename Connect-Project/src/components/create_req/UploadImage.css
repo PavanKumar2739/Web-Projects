@@ -1,0 +1,30 @@
+.upload-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .upload-label {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .upload-icon {
+    margin-right: 8px;
+  }
+  
+  #upload-input {
+    display: none;
+  }
+  
+  .uploaded-image {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
