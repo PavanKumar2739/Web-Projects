@@ -1,0 +1,13 @@
+.spinnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust as needed */
+  }
+  
+  .spinner-border {
+    width: 5rem; /* Adjust the size as needed */
+    height: 5rem; /* Adjust the size as needed */
+    color: #007bff; /* Bootstrap primary color, change as needed */
+    border-width: 0.3rem; /* Adjust the thickness as needed */
+  }
